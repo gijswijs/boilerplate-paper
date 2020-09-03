@@ -1,4 +1,0 @@
-Method
-======
-
-Method
