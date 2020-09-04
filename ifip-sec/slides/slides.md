@@ -1,4 +1,15 @@
-# In the morning
+# Introduction
+
+## Bitcoin scalability issues
+
+- 3/7 Tx/second
+
+## Payment Channel Networks
+
+- Keep payment offchain
+
+## Lightning Network
+
 
 ## Getting up
 
