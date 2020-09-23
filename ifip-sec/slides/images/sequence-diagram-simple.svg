@@ -233,7 +233,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -377,139 +377,135 @@
          x="59.880955"
          y="150.4259"
          style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style Light Italic';stroke-width:0.264583">insufficient balance</tspan></text>
-    <g
-       id="g1067"
-       transform="matrix(1.6334833,0,0,1.5101365,-20.837904,-21.935773)"
-       style="stroke-width:0.6367">
-      <rect
-         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.19101;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
-         id="rect1005"
-         width="26.458332"
-         height="20.410715"
-         x="26.987499"
-         y="24.347036"
-         rx="2.3717825"
-         ry="2.5655081" />
-      <rect
-         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.19101;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
-         id="rect1005-6"
-         width="26.458334"
-         height="20.410715"
-         x="89.135063"
-         y="24.138777"
-         rx="2.3717825"
-         ry="2.5655081" />
-      <rect
-         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.19101;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
-         id="rect1005-4"
-         width="26.458334"
-         height="20.410715"
-         x="151.94341"
-         y="24.272411"
-         rx="2.3717825"
-         ry="2.5655081" />
-      <text
-         xml:space="preserve"
-         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.16846"
-         x="35.376656"
-         y="36.043774"
-         id="text1030"><tspan
-           sodipodi:role="line"
-           id="tspan1028"
-           x="35.376656"
-           y="36.043774"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.16846">Alice</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.16846"
-         x="98.310738"
-         y="35.835514"
-         id="text1030-0"><tspan
-           sodipodi:role="line"
-           id="tspan1028-3"
-           x="98.310738"
-           y="35.835514"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.16846">Bob</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.16846"
-         x="157.63919"
-         y="35.969151"
-         id="text1030-8"
-         inkscape:transform-center-x="61.872896"
-         inkscape:transform-center-y="-2.9399648"><tspan
-           sodipodi:role="line"
-           id="tspan1028-39"
-           x="157.63919"
-           y="35.969151"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.16846">Charlie</tspan></text>
-    </g>
-    <g
-       id="g1067-2"
-       transform="matrix(1.6334833,0,0,1.5101365,-20.067849,120.98794)"
-       style="stroke-width:0.6367">
-      <rect
-         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.19101;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
-         id="rect1005-1"
-         width="26.458332"
-         height="20.410715"
-         x="26.987499"
-         y="24.347036"
-         rx="2.3717825"
-         ry="2.5655081" />
-      <rect
-         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.19101;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
-         id="rect1005-6-9"
-         width="26.458334"
-         height="20.410715"
-         x="89.135063"
-         y="24.138777"
-         rx="2.3717825"
-         ry="2.5655081" />
-      <rect
-         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.19101;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
-         id="rect1005-4-3"
-         width="26.458334"
-         height="20.410715"
-         x="151.94341"
-         y="24.272411"
-         rx="2.3717825"
-         ry="2.5655081" />
-      <text
-         xml:space="preserve"
-         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.16846"
-         x="35.376656"
-         y="36.043774"
-         id="text1030-9"><tspan
-           sodipodi:role="line"
-           id="tspan1028-8"
-           x="35.376656"
-           y="36.043774"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.16846">Alice</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.16846"
-         x="98.310738"
-         y="35.835514"
-         id="text1030-0-5"><tspan
-           sodipodi:role="line"
-           id="tspan1028-3-8"
-           x="98.310738"
-           y="35.835514"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.16846">Bob</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.16846"
-         x="157.63919"
-         y="35.969151"
-         id="text1030-8-3"
-         inkscape:transform-center-x="61.872896"
-         inkscape:transform-center-y="-2.9399648"><tspan
-           sodipodi:role="line"
-           id="tspan1028-39-2"
-           x="157.63919"
-           y="35.969151"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.16846">Charlie</tspan></text>
-    </g>
+    <rect
+       style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+       id="rect1005"
+       width="43.219242"
+       height="30.822966"
+       x="23.245726"
+       y="14.831575"
+       rx="3.8742671"
+       ry="3.8742676" />
+    <rect
+       style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+       id="rect1005-6"
+       width="43.219246"
+       height="30.822966"
+       x="124.76273"
+       y="14.517075"
+       rx="3.8742671"
+       ry="3.8742676" />
+    <rect
+       style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+       id="rect1005-4"
+       width="43.219246"
+       height="30.822966"
+       x="227.35912"
+       y="14.718882"
+       rx="3.8742671"
+       ry="3.8742676" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.64887px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="30.85672"
+       y="33.796291"
+       id="text1030"
+       transform="scale(1.0400381,0.96150324)"><tspan
+         sodipodi:role="line"
+         id="tspan1028"
+         x="30.85672"
+         y="33.796291"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">Mallory</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.64887px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="133.13577"
+       y="33.4692"
+       id="text1030-0"
+       transform="scale(1.0400381,0.96150324)"><tspan
+         sodipodi:role="line"
+         id="tspan1028-3"
+         x="133.13577"
+         y="33.4692"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">Alice</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.64887px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="233.01782"
+       y="33.679089"
+       id="text1030-8"
+       inkscape:transform-center-x="61.872896"
+       inkscape:transform-center-y="-2.9399648"
+       transform="scale(1.0400381,0.96150324)"><tspan
+         sodipodi:role="line"
+         id="tspan1028-39"
+         x="233.01782"
+         y="33.679089"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">Bob</tspan></text>
+    <rect
+       style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+       id="rect1005-1"
+       width="43.219242"
+       height="30.822966"
+       x="24.015779"
+       y="157.75529"
+       rx="3.8742671"
+       ry="3.8742676" />
+    <rect
+       style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+       id="rect1005-6-9"
+       width="43.219246"
+       height="30.822966"
+       x="125.53279"
+       y="157.44078"
+       rx="3.8742671"
+       ry="3.8742676" />
+    <rect
+       style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+       id="rect1005-4-3"
+       width="43.219246"
+       height="30.822966"
+       x="228.12917"
+       y="157.64259"
+       rx="3.8742671"
+       ry="3.8742676" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.64887px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="31.59713"
+       y="182.4424"
+       id="text1030-9"
+       transform="scale(1.0400381,0.96150324)"><tspan
+         sodipodi:role="line"
+         id="tspan1028-8"
+         x="31.59713"
+         y="182.4424"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">Mallory</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.64887px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="133.87619"
+       y="182.11531"
+       id="text1030-0-5"
+       transform="scale(1.0400381,0.96150324)"><tspan
+         sodipodi:role="line"
+         id="tspan1028-3-8"
+         x="133.87619"
+         y="182.11531"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">Alice</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.64887px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="233.75822"
+       y="182.3252"
+       id="text1030-8-3"
+       inkscape:transform-center-x="61.872896"
+       inkscape:transform-center-y="-2.9399648"
+       transform="scale(1.0400381,0.96150324)"><tspan
+         sodipodi:role="line"
+         id="tspan1028-39-2"
+         x="233.75822"
+         y="182.3252"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">Bob</tspan></text>
   </g>
 </svg>
