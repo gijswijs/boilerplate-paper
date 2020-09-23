@@ -11,29 +11,6 @@
 - Avg. 2000 Txs per 10 min.
 - $\approx$ 3 Tx/s
 
-## Capacity and security
-
-Naively increasing capacity reduces security [@Sompolinsky2015]:
-
-- Larger blocks
-- Faster block creation
-
-::: notes
-
-Non-malicious forks happen when mining nodes are mining a block when they haven't yet heard of the latest block mined.
-So they happen during the propagation of the latest block through the network.
-Mining the wrong block is a waste of resources, and it reduces security, because it diverts computing power away from securing the actual blockchain to "securing" an orphaned block that will be rejected by the network.
-
-Larger blocks take longer to propagate through the network.
-At any time a larger proportion of mining nodes will not have heard of the latest block.
-Those mining nodes will keep working on appending to what they think is the latest block.
-Hence more forks of the blockchain will occur resulting in a reduction of the security threshold of the system
-
-Similarly, faster block creation means more blocks are being created while the latest block propagates through the network. Leading to more orphaned blocks being created.
-
-So there's a delicate balance to be struck between propagation time, block size and block creation rate.
-:::
-
 ## Off-chain transactions
 
 Not broadcasting Txs to the blockchain, to increase capacity.
@@ -57,15 +34,70 @@ Several different techniques have been proposed. Poon-Dryja payment channels for
 
 ## Lightning Network
 
-![Lightning Network](./slides/images/lightning.svg)
+![Lightning Network](./slides/images/lightning-1.svg)
 
-## Multi-hop Payments
+## A Pays 20 mBTC to F
 
-![Multi-hop Payments](./slides/images/multi-hop.svg)
+![Lightning Network](./slides/images/lightning-2.svg)
+
+## A Pays 20 mBTC to F
+
+![Lightning Network](./slides/images/lightning-3.svg)
+
+## A Pays 20 mBTC to F
+
+![Lightning Network](./slides/images/lightning-4.svg)
+
+## A Pays 30 mBTC to F
+
+![Lightning Network](./slides/images/lightning-5.svg)
+
+::: notes
+
+If A would route a second payment to F, this time of 30 mBTC it might try to use the same route: A -> C -> F
+The capacities of those channels are big enough to allow for that payment, and since the balance between C and F are unknown to A, it is worth a try.
+C will reply with an error though, stating insufficient balance.
+
+:::
+
+## A Pays 30 mBTC to F
+
+![Lightning Network](./slides/images/lightning-6.svg)
+
+::: notes
+
+A will try to find an alternative route for the payment, in this case: A -> B -> D -> F
+The capacities of those channels are also big enough to allow for that payment.
+
+:::
+
+## A Pays 30 mBTC to F
+
+![Lightning Network](./slides/images/lightning-7.svg)
+
+::: notes
+
+This time the payment does succeed, since the balances are sufficient.
+This routing by trial and error is an integral part of the Lightning Network.
+
+:::
+
+## Payment Hash
+
+- Receiver will only accept payments with a known payment hash
+- Payment hash is the hash of a random number, created by the *receiver*
+- Receiver shares the payment hash with the *sender*
+- Sender uses payment hash to identify the transaction
+
+::: notes
+
+What is important to notice is that F will only accept a payment if F has an open invoice for that payment. An invoice is a hash of a random number, created by F. This hash is called the payment hash. F shares the payment hash with A, and A will use that hash to identify the payment.
+
+:::
 
 # Background
 
-## LN privacy Threat Model [@Malavolta2017]
+## Threat Model [@Malavolta2017]
 
 - Balance security
 - Serializability
@@ -74,10 +106,10 @@ Several different techniques have been proposed. Poon-Dryja payment channels for
 
 ::: notes
 
-– Balance security: participants don’t run the risk of losing coins to a malevolent adversary.
-– Serializability: executions of a PCN are serializable as understood in concurrency control of transaction processing. All transactions that are concurrently processed are assumed to be correct by themselves (no dependencies exist between them), so *any* serial execution of these transactions is legitimate. Serializability states that if you can convert a schedule of execution of transactions into a any serial schedule of execution of those same transactions, resulting in an equivalent system state, is correct.
-– (Off-path) value privacy: malicious participants in the network cannot learn information about payments they aren’t part of.
-– (On-path) relationship anonymity: given at least on honest inter- mediary, corrupted intermediaries cannot determine the sender and the receiver of a transaction better than just by guessing.
+– Balance security: participants shouldn't run the risk of losing their coins.
+– Serializability: Transactions that are executed concurrently shouldn't leave the system in a conflicting state. Another way of looking at this is to say that the Lightning Network should not reintroduce the double spending problem that the Bitcoin Network so elegantly solved.
+– (Off-path) value privacy: Nodes should not learn information about payments they are not part of.
+– (On-path) relationship anonymity: Nodes in a multi-hop payment path cannot determine the sender and receiver of a transaction.
 
 :::
 
@@ -85,12 +117,18 @@ Several different techniques have been proposed. Poon-Dryja payment channels for
 
 ![BDA](./slides/images/sequence-diagram-simple.svg)
 
+::: notes
+
+The system of trial and error for making payments can be used to probe balances in the network.
+
+:::
+
 ## Enhancements of Naïve BDA
 
 - $M$ creates fake invoice h(x)
 - Use a binary search algorithm
 - Parameterize the accuracy threshold
-- Attack all open channels of $A$
+- Attack all open channels of $B$
 
 ::: notes
 
@@ -162,28 +200,6 @@ In this local cluster we tested the Basic BDA algorithm and the improved algorit
 
 # Results
 
-## Number of channels
-
-- LN is a graph $G$, # vertices $n = \left | G(V) \right |$ ; # edges $m = \left | G(E) \right |$
-- $n = 3608$ ; $m = 9438$
-- $m_{C > 2^{32}} = 1086$
-- $m_{C > 2^{33}} = 540$
-
-::: notes
-
-By using a snapshot of the network we can establish the lower bound of the amount of channels that can have their balance disclosed.
-In this paper we used a snapshot made on the 3rd of October, 2019.
-The the two-way channel probing algorithm allows for the probing of channels with a capacity between $2^{32}$ and $2^{33}$. Based on this snapshot that would be $1086 - 540 = 546$ channels extra.
-
-We can use the network shares of the different clients to estimate which part of the 540 channels with a $capacity \geq 2^{33}$
-
-The LN is a graph $G$, with the number of vertices $n = \left | G(V) \right |$ and the number of edges $m = \left | G(E) \right |$.
-Our analysis yielded the following values for n and m:
-$n = 3608$
-$m = 9438$ with $1086$ channels having a capacity greater than $2^{32}$ and $540$ channels having a capacity greater than $2^{33}$.
-
-:::
-
 ## Channels Affected by Two-way BDA
 
 <div id="fig:capacity">
@@ -191,40 +207,27 @@ $m = 9438$ with $1086$ channels having a capacity greater than $2^{32}$ and $540
 Cumulative percentage graph of payment channels ordered by increasing capacity.
 </div>
 
-
-## BOLT implementation differences
-
-- BOLT specs changed $\textsc{amount\_msat}$ 32-bit to 64 bit (unsigned)
-- Theoretical limit of payment changed from $2^{32} - 1$ to $\textsc{MAX\_FUNDING\_ALLOWED}$
-- BOLT protocol: 4 most significant bytes set to 0
-- Clients implemented this differently
-
 ::: notes
 
-The BOLT specs were changed on the 23rd of May, 2017 for the variable containing the payment amount, $\textsc{amount\_msat}$
-Additional specifications required the sending node to set the four most significant bytes of amount_msat to 0, keeping the $\mpa{}$ at the original limit.
+based on a snapshot of the network we show that our new algorithm shows a 6 percentage point increase in vulnerable channels.
+The graph shows the original limit of the BDA, at \mpa{}, and the new limit at twice that value.
 
-The theoretical limit changed to $2^{64} - 1$ but is now bounded by the maximum channel size set by $\textsc{MAX\_FUNDING\_ALLOWED}$ of 16,777,215 satoshi. ($2^{24}$)
+## Client Differences and BDA
 
-C-lighting was the only client that fully adhered to the BOLT spec.
-Eclair seems to have a arbitrary limit at 5 billion msat ($5 \cdot 10^9$).
-LND has some unverified RPC's that don't take the limit into account at all.
-
-So, using LND, it's possible to create fake payments up to the maximum channel capacity.
-
-:::
-
-## Implementation Differences and BDA
-
+- 2 clients allow for payment requests above the protocol limit
 - Allows for probing balances $> \mpa{}$
 - Only channels with LND and/or Eclaire nodes
 - The number of susceptible channels can be estimated.
 
 ::: notes
 
-The most obvious consequence of these differences in implementation is that it allows for probing channel balances above the limit of $\mpa{}$. Using a LND node it is, at least in theory, possible to run the BDA algorithm up until the limit of the $\textsc{MAX\_FUNDING\_ALLOWED}$.
+Our research showed that 2 out of 3 of the main clients (namely LND and Eclaire) allow for payment requests above the limit set by the protocol.
 
-Only channels that have LND and or Eclair clients on either end are susceptible. The reason that c-lightning is not susceptible is special, and leads to behavior that we will explain later on in this presentation.
+The most obvious consequence of this is that it allows for probing channel balances above that limit. Using a LND node it is, at least in theory, possible to run the BDA algorithm up until the limit of maximum channel capacity.
+
+We tried this in a test setting, and this was indeed the case. But in special cases this led to unexpected behavior, that we will explain later.
+
+For now it is suffice to say that channels that have LND and or Eclair clients on either end are susceptible.
 
 :::
 
@@ -243,50 +246,11 @@ Table: Proportion of nodes running different Lightning clients
 
 ::: notes
 
-The self reporting of client type resulted in this table.
+Since client type isn't broadcasted on the LN network, we can only estimate how many channels are vulnerable for limitless probing.
 
-:::
+Shown here is the table with the network shares, based on the information retrieved from the 1ML website.
 
-## Channel Types
-
-- Vertex type = client type (LND: $type_l$, c-lightning: $type_c$, Eclair: $type_e$)
-- Edge type is defined by the pair of vertices it connects (e.g.: $type_{(l, c)}$ connects LND to c-lightning)
-- $type_{(l, c)} \equiv type_{(c, l)}$
-
-::: notes
-
-The client software defines the type of the vertex. $type_l$ for LND nodes, $type_c$ for c-lightning nodes and $type_e$ for Eclair nodes.
-An edge is said to be of $type_{(l, c)}$ if it connects a $type_l$ vertex and a $type_c$ vertex. The graph is without self-loops and undirected, so edge $type_{(l, c)} \equiv type_{(c, l)}$.
-
-We can now combine the estimated network shares with the number of channels found in our snapshot, to estimate the different edge types.
-
-:::
-
-
-## Estimation of # Edge Types
-
-- $P(type_{(l, l)}) = 0.8059^2$
-- $P(type_{(c, c)}) = 0.1465^2$
-- $P(type_{(e, e)}) = 0.0403^2$
-- $P(type_{(l, c)}) = 2 \times 0.8059 \times 0.1465$
-- $P(type_{(l, e)}) = 2 \times 0.8059 \times 0.0403$
-- $P(type_{(c, e)}) = 2 \times 0.1465 \times 0.0403$
-
-## Disclosable channels with $C \geq 2^{33}$
-
-- $P(type_{([c, e, l], [c, e, l])}) \times 540$
-- $P(type_{(l, l)} \cup type_{(l, e)}) \times 540 = 386$
-- Total disclosable channels: $9438 - 540 + 386 = 9284$
-
-::: notes
-
-As mentioned earlier, only channels that have LND and/or Eclair clients on both ends are susceptible.
-
-Now, assuming vertex type and channel capacity have a covariance of zero, the number of edges of each edge type, having a capacity greater than $2^{33}$ is calculated as follows: $P(type_{([c, e, l], [c, e, l])}) \times 540$
-
-We are interested in the $type_{(l, l)}$ and $type_{(l, e)}$. Based on the network shares we found, we estimate that 386 channels can have their balance disclosed.
-
-So a total of 9438 - 540 + 386 = 9284 channels have balances that can be disclosed. This is 98.4% of all channels.
+Using this information we estimate that additional 4 percentage point increase of vulnerable channels can be found by using limitless probing of channel balances.
 
 :::
 
@@ -299,7 +263,7 @@ So a total of 9438 - 540 + 386 = 9284 channels have balances that can be disclos
 
 ::: notes
 
-As mentioned before, the channels with c-lightning on one end showed behavior that made it impossible to  disclose the balance, but did reveal a vulnerability.
+As mentioned before, the channels with the remaining most common client, c-lightning, showed behavior that made it impossible to  disclose the balance, but did reveal a vulnerability of the network.
 
 If a C-lightning node is being requested to route a payment to another node, or is the receiver of a payment,
 and if that payment is bigger than $\mpa{}$,
@@ -311,17 +275,9 @@ Consider the basic scenario, where Mallory and Alice run LND, and Bob runs c-lig
 
 We coined the term Payment of Death for this attack, after the infamous Ping of Death.
 
-:::
+Using the same estimation techniques we estimated that 2.7% of all channels were susceptible for the Payment of Death.
 
-## Channels affected by POD
-
-- $type_{(l, c)}$ channels, with a balance above \mpa{}
-- $m_{C > 2^{32}} * \times P(type_{(l, c)}) = 256$
-- 2.7% of all channels is susceptible to POD
-
-::: notes
-
-We have notified the developers of the LN implementations by means of a responsible disclosure.
+Obviously we have notified the developers of the LN implementations by means of a responsible disclosure. And clients should by now be patched.
 
 :::
 
@@ -389,8 +345,7 @@ Countermeasures to Balance Disclosure Attacks were already known, but our resear
 - Improved the basic BDA with 9.3 perc. point
 - Showed channels capacity above $2^{32}$ and even $2^{33}$ are vulnerable for BDA
 - Implementation differences can be leveraged
-- Developed a new attack: POD
-- Network wide POD attack has a large impact on network capacity
+- New attack POD has large impact on total network capacity
 
 ::: notes
 
@@ -404,51 +359,3 @@ This paper presented an improvement to the algorithm of the original BDA. We sho
 :::
 
 # Thank you!
-
-# Bitcoin Socratic FREE! bonus slides
-
-## Academia is always behind
-
-The reality has changed:
-
-- AMP
-- WUMBO channels
-- POD vulnerability is fixed by now (right?)
-
-::: notes
-
-Are balances private? If you would do more BDA's over a longer time you can track payments.
-Does AMP make that more difficult?
-
-WUMBO channels are bigger, and therefor more channels will stay out of reach of a BDA?
-
-:::
-
-## Differential Privacy
-
-![](slides/images/differantial-privacy.png)
-
-::: notes
-
-Suppose you have a process that takes some database as input, and returns some output.
-This process can be anything. For example, it can be:
-
-- computing some statistic
-- a machine learning training process
-
-To make a process differentially private, you usually have to modify it a little bit. Typically, you add some randomness, or noise.
-
-Now, remove somebody from your database, and run your new process on it. If the new process is differentially private, then the two outputs are basically the same. This must be true no matter who you remove, and what database you had in the first place.
-
-Now we are not trying to make a database hide the fact that somebody has been removed from the database. We are trying to hide transactions.
-So the noise should be big enough to "hide" an average transaction.
-
-:::
-
-## Problems with adding noise to your balance
-
-- You still need to be able to route the transaction
-- Use a folded distribution? Breaks differential privacy.
-- JIT routing with rebalancing?
-
-# The End

@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
    version="1.1"
    id="svg990"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
@@ -19,50 +19,50 @@
     <marker
        style="overflow:visible"
        id="marker9980"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Mstart"
        inkscape:isstock="true">
       <path
-         transform="scale(0.4) translate(10,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
          id="path9978" />
     </marker>
     <marker
-       style="overflow:visible;"
+       style="overflow:visible"
        id="Arrow1Mend"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Mend"
        inkscape:isstock="true">
       <path
-         transform="scale(0.4) rotate(180) translate(10,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
          id="path8490" />
     </marker>
     <marker
-       style="overflow:visible;"
+       style="overflow:visible"
        id="Arrow1Send"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Send"
        inkscape:isstock="true">
       <path
-         transform="scale(0.2) rotate(180) translate(6,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
          id="path8496" />
     </marker>
     <rect
        x="60"
        y="70"
        width="10"
-       height="-5"
+       height="0"
        id="rect8843" />
     <symbol
        id="AuxillaryOp">
@@ -198,9 +198,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="369.21301"
-     inkscape:cy="279.62338"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="498.12457"
+     inkscape:cy="117.6166"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -253,156 +253,164 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583" /></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 40.03869,44.604167 0,74.333383"
+       d="M 44.564628,45.422608 V 157.67616"
        id="path9000"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
-       d="M 39.906032,54.901041 102.05082,54.712052"
+       d="M 44.347933,60.972293 145.86041,60.686894"
        id="path9006"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583"
-       x="46.113094"
-       y="53.389141"
-       id="text9010"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.64887px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583"
+       x="52.389492"
+       y="61.038918"
+       id="text9010"
+       transform="scale(1.0400381,0.96150324)"><tspan
          sodipodi:role="line"
          id="tspan9008"
-         x="46.113094"
-         y="53.389141"
+         x="52.389492"
+         y="61.038918"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">pay 10 mB to invoice H(R)</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 102.76786,44.604167 0,74.333383"
+       d="M 147.03168,45.422608 V 157.67616"
        id="path9182"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 165.49703,44.604167 0,74.333383"
+       d="M 249.49873,45.422608 V 157.67616"
        id="path9184"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-3)"
-       d="m 102.84866,66.319143 62.14478,-0.18899"
+       d="m 147.16366,78.215185 101.51246,-0.2854"
        id="path9006-1"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583"
-       x="109.05572"
-       y="63.287563"
-       id="text9010-9"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.64887px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583"
+       x="151.24715"
+       y="76.585373"
+       id="text9010-9"
+       transform="scale(1.0400381,0.96150324)"><tspan
          sodipodi:role="line"
          id="tspan9008-9"
-         x="109.05572"
-         y="63.287563"
+         x="151.24715"
+         y="76.585373"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">pay 10 mB to invoice H(R)</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-2)"
-       d="m 40.198751,77.737241 62.144789,-0.18899"
+       d="M 44.826085,95.458072 146.33856,95.172671"
        id="path9006-18"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583"
-       x="46.405811"
-       y="76.080238"
-       id="text9010-4"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.64887px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583"
+       x="52.849232"
+       y="96.677544"
+       id="text9010-4"
+       transform="scale(1.0400381,0.96150324)"><tspan
          sodipodi:role="line"
          id="tspan9008-0"
-         x="46.405811"
-         y="76.080238"
+         x="52.849232"
+         y="96.677544"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">pay 20 mB to invoice H(R)</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-3-6)"
-       d="m 102.81065,89.155333 62.14478,-0.18899"
+       d="m 147.10157,112.70095 101.51247,-0.2854"
        id="path9006-1-5"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583"
-       x="109.34844"
-       y="87.036987"
-       id="text9010-9-1"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.64887px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583"
+       x="151.70689"
+       y="113.88621"
+       id="text9010-9-1"
+       transform="scale(1.0400381,0.96150324)"><tspan
          sodipodi:role="line"
          id="tspan9008-9-1"
-         x="109.34844"
-         y="87.036987"
+         x="151.70689"
+         y="113.88621"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">pay 20 mB to invoice H(R)</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-2-3)"
-       d="m 40.132258,100.57344 62.144782,-0.18899"
+       d="m 44.717469,129.94384 101.512461,-0.2854"
        id="path9006-18-5"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583"
-       x="46.339321"
-       y="98.034248"
-       id="text9010-4-6"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.64887px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583"
+       x="52.744801"
+       y="131.15849"
+       id="text9010-4-6"
+       transform="scale(1.0400381,0.96150324)"><tspan
          sodipodi:role="line"
          id="tspan9008-0-4"
-         x="46.339321"
-         y="98.034248"
+         x="52.744801"
+         y="131.15849"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">pay 30 mB to invoice H(R)</tspan></text>
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.53, 0.53;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker9980)"
-       d="M 40.265895,111.81369 102.41068,111.6247"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.53, 0.53;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker9980)"
+       d="m 44.935763,146.91816 101.512467,-0.2854"
        id="path9006-18-5-5"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style Light Italic';stroke-width:0.264583"
-       x="50.882908"
-       y="110.3018"
-       id="text9010-4-6-3"><tspan
+       style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.64887px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style Light Italic';stroke-width:0.264583"
+       x="59.880955"
+       y="150.4259"
+       id="text9010-4-6-3"
+       transform="scale(1.0400381,0.96150324)"><tspan
          sodipodi:role="line"
          id="tspan9008-0-4-1"
-         x="50.882908"
-         y="110.3018"
+         x="59.880955"
+         y="150.4259"
          style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style Light Italic';stroke-width:0.264583">insufficient balance</tspan></text>
     <g
-       id="g1067">
+       id="g1067"
+       transform="matrix(1.6334833,0,0,1.5101365,-20.837904,-21.935773)"
+       style="stroke-width:0.6367">
       <rect
-         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.19101;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
          id="rect1005"
          width="26.458332"
          height="20.410715"
          x="26.987499"
          y="24.347036"
-         rx="3.8742673"
-         ry="3.8742673" />
+         rx="2.3717825"
+         ry="2.5655081" />
       <rect
-         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.19101;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
          id="rect1005-6"
          width="26.458334"
          height="20.410715"
          x="89.135063"
          y="24.138777"
-         rx="3.8742673"
-         ry="3.8742673" />
+         rx="2.3717825"
+         ry="2.5655081" />
       <rect
-         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.19101;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
          id="rect1005-4"
          width="26.458334"
          height="20.410715"
          x="151.94341"
          y="24.272411"
-         rx="3.8742673"
-         ry="3.8742673" />
+         rx="2.3717825"
+         ry="2.5655081" />
       <text
          xml:space="preserve"
-         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.16846"
          x="35.376656"
          y="36.043774"
          id="text1030"><tspan
@@ -410,10 +418,10 @@
            id="tspan1028"
            x="35.376656"
            y="36.043774"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">Alice</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.16846">Alice</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.16846"
          x="98.310738"
          y="35.835514"
          id="text1030-0"><tspan
@@ -421,10 +429,10 @@
            id="tspan1028-3"
            x="98.310738"
            y="35.835514"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">Bob</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.16846">Bob</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.16846"
          x="157.63919"
          y="35.969151"
          id="text1030-8"
@@ -434,41 +442,42 @@
            id="tspan1028-39"
            x="157.63919"
            y="35.969151"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">Charlie</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.16846">Charlie</tspan></text>
     </g>
     <g
        id="g1067-2"
-       transform="translate(0.47141859,94.642917)">
+       transform="matrix(1.6334833,0,0,1.5101365,-20.067849,120.98794)"
+       style="stroke-width:0.6367">
       <rect
-         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.19101;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
          id="rect1005-1"
          width="26.458332"
          height="20.410715"
          x="26.987499"
          y="24.347036"
-         rx="3.8742673"
-         ry="3.8742673" />
+         rx="2.3717825"
+         ry="2.5655081" />
       <rect
-         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.19101;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
          id="rect1005-6-9"
          width="26.458334"
          height="20.410715"
          x="89.135063"
          y="24.138777"
-         rx="3.8742673"
-         ry="3.8742673" />
+         rx="2.3717825"
+         ry="2.5655081" />
       <rect
-         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+         style="opacity:0.996;fill:none;stroke:#000000;stroke-width:0.19101;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
          id="rect1005-4-3"
          width="26.458334"
          height="20.410715"
          x="151.94341"
          y="24.272411"
-         rx="3.8742673"
-         ry="3.8742673" />
+         rx="2.3717825"
+         ry="2.5655081" />
       <text
          xml:space="preserve"
-         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.16846"
          x="35.376656"
          y="36.043774"
          id="text1030-9"><tspan
@@ -476,10 +485,10 @@
            id="tspan1028-8"
            x="35.376656"
            y="36.043774"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">Alice</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.16846">Alice</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.16846"
          x="98.310738"
          y="35.835514"
          id="text1030-0-5"><tspan
@@ -487,10 +496,10 @@
            id="tspan1028-3-8"
            x="98.310738"
            y="35.835514"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">Bob</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.16846">Bob</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.16846"
          x="157.63919"
          y="35.969151"
          id="text1030-8-3"
@@ -500,7 +509,7 @@
            id="tspan1028-39-2"
            x="157.63919"
            y="35.969151"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.264583">Charlie</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';stroke-width:0.16846">Charlie</tspan></text>
     </g>
   </g>
 </svg>
