@@ -9,7 +9,7 @@ extract-media: ../output/images
 
 metadata:
   csl: ./assets/elsevier.csl
-  revealjs-url: ../reveal.js
+  revealjs-url: /reveal.js
 
 # variables:
 #   date: 2020-03-10

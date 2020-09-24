@@ -8,10 +8,10 @@
                       },
     "liveServer.settings":  {
                                 "root":  "/output",
-                                "mount":  [
-                                              "/reveal.js reveal.js",
-                                              "/output output"
-                                          ]
+                                "mount": [
+                                    ["/reveal.js", "./reveal.js"],
+                                    ["/output", "./output"]
+                                ]
                             },
     "pasteImage.basePath":  "${currentFileDir}/..",
     "pasteImage.path":  "${currentFileDir}/images",
